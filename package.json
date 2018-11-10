@@ -1,0 +1,49 @@
+{
+ "name": "cheap-cheap-chicken",
+ "version": "0.0.1",
+ "description": "@CheapCheapChicken",
+ "license": "GPL-3.0",
+ "main": "server.js",
+ "scripts": {
+  "build": "babel src --out-dir dist",
+  "start": "yarn build && node dist/server.js"
+ },
+ "repository": {
+  "url": "https://github.com/zky829/cheap-cheap-chicken"
+ },
+ "keywords": [
+  "node",
+  "twitter",
+  "twitterbot",
+  "bot"
+ ],
+ "dependencies": {
+  "dotenv": "^6.1.0",
+  "express": "^4.16.4",
+  "node": "^11.0.0",
+  "twit": "^2.1.0"
+ },
+ "devDependencies": {
+  "@babel/cli": "^7.0.0",
+  "@babel/core": "^7.0.0",
+  "@babel/node": "^7.0.0",
+  "@babel/plugin-proposal-class-properties": "^7.0.0",
+  "@babel/plugin-proposal-decorators": "^7.0.0",
+  "@babel/plugin-proposal-do-expressions": "^7.0.0",
+  "@babel/plugin-proposal-export-default-from": "^7.0.0",
+  "@babel/plugin-proposal-export-namespace-from": "^7.0.0",
+  "@babel/plugin-proposal-function-bind": "^7.0.0",
+  "@babel/plugin-proposal-function-sent": "^7.0.0",
+  "@babel/plugin-proposal-json-strings": "^7.0.0",
+  "@babel/plugin-proposal-logical-assignment-operators": "^7.0.0",
+  "@babel/plugin-proposal-nullish-coalescing-operator": "^7.0.0",
+  "@babel/plugin-proposal-numeric-separator": "^7.0.0",
+  "@babel/plugin-proposal-optional-chaining": "^7.0.0",
+  "@babel/plugin-proposal-pipeline-operator": "^7.0.0",
+  "@babel/plugin-proposal-throw-expressions": "^7.0.0",
+  "@babel/plugin-syntax-dynamic-import": "^7.0.0",
+  "@babel/plugin-syntax-import-meta": "^7.0.0",
+  "@babel/plugin-transform-async-to-generator": "^7.0.0",
+  "@babel/preset-env": "^7.0.0"
+ }
+}

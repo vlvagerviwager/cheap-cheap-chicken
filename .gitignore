@@ -1,0 +1,15 @@
+# Logs
+yarn-debug.log*
+yarn-error.log*
+
+# Distribution
+dist/
+
+# Dependency directories
+node_modules/
+
+# macOS
+.DS_Store
+
+# Configs
+.env
