@@ -58,7 +58,8 @@ function getRandomQuote() {
 }
 
 app.all(`/${process.env.BOT_ENDPOINT}`, (req, res) => {
-  const tweetText = `${getRandomQuote()} #PaRappatheRapper #PaRappa #パラッパラッパー`;
+  const hashTags = '#PaRappatheRapper #PaRappa #パラッパラッパー';
+  const tweetText = `${getRandomQuote()} ${hashTags}`;
   postTweet(tweetText, res);
 });
 
