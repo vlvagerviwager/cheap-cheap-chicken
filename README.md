@@ -21,3 +21,4 @@ Source adapted from [twitterbot](https://twitterbot.glitch.me/) on Glitch.
 - [Twit](https://github.com/ttezel/twit)
 - Babel
 - Yarn
+- ESLint

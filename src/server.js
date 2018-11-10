@@ -7,7 +7,8 @@ import Twit from 'twit';
  * TODO:
  *
  * - Fix "Error: { Error: Invalid or expired token."
- * - Host on free Heroku + wake it up with New Relic addon
+ * - Host on free Heroku + wake it up with New Relic addon; generate code snippet from Postman
+ *     - https://blog.andyjiang.com/intermediate-cron-jobs-with-heroku
  * - Use cron-job.org to hit /BOT_ENDPOINT to wake up app and make the bot tweet
  * - Unit tests (Jest)
  */
