@@ -6,7 +6,8 @@
  "main": "server.js",
  "scripts": {
   "build": "babel src --out-dir dist",
-  "start": "yarn build && node dist/server.js"
+  "start": "yarn build && node dist/server.js",
+  "eslint": "./node_modules/.bin/eslint ."
  },
  "repository": {
   "url": "https://github.com/zky829/cheap-cheap-chicken"
@@ -44,6 +45,11 @@
   "@babel/plugin-syntax-dynamic-import": "^7.0.0",
   "@babel/plugin-syntax-import-meta": "^7.0.0",
   "@babel/plugin-transform-async-to-generator": "^7.0.0",
-  "@babel/preset-env": "^7.0.0"
+  "@babel/preset-env": "^7.0.0",
+  "eslint": "^5.9.0",
+  "eslint-config-airbnb-base": "^13.1.0",
+  "eslint-plugin-import": "^2.14.0",
+  "eslint-plugin-jsx-a11y": "^6.1.2",
+  "eslint-plugin-react": "^7.11.1"
  }
 }
