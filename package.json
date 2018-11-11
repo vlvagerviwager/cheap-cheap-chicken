@@ -7,7 +7,7 @@
  "scripts": {
   "build": "babel src --out-dir dist",
   "start": "yarn build && node dist/server.js",
-  "eslint": "./node_modules/.bin/eslint ."
+  "lint": "./node_modules/.bin/eslint ."
  },
  "repository": {
   "url": "https://github.com/zky829/cheap-cheap-chicken"
@@ -22,6 +22,7 @@
   "dotenv": "^6.1.0",
   "express": "^4.16.4",
   "node": "^11.0.0",
+  "request": "^2.88.0",
   "twit": "^2.1.0"
  },
  "devDependencies": {

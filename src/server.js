@@ -2,14 +2,15 @@ import dotenv from 'dotenv';
 import express from 'express';
 import fs from 'fs';
 import Twit from 'twit';
+import tweetEndpoint from './bot';
 
 /*
  * TODO:
  *
  * - Fix "Error: { Error: Invalid or expired token."
- * - Host on free Heroku + wake it up with New Relic addon; generate code snippet from Postman
+ * - Host on free Heroku + wake it up once a day with New Relic addon
+ * - Use Heroku Scheduler add-on to hit /BOT_ENDPOINT every 24 hours and make the bot tweet
  *     - https://blog.andyjiang.com/intermediate-cron-jobs-with-heroku
- * - Use cron-job.org to hit /BOT_ENDPOINT to wake up app and make the bot tweet
  * - Unit tests (Jest)
  */
 
@@ -50,12 +51,12 @@ const postTweet = (tweetText, res) => {
   });
 };
 
-function getRandomQuote() {
+const getRandomQuote = () => {
   const data = fs.readFileSync(`${__dirname}/../src/data/quotes.json`, 'utf8');
   const { quotes } = JSON.parse(data);
   const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
   return randomQuote;
-}
+};
 
 app.all(`/${process.env.BOT_ENDPOINT}`, (req, res) => {
   const hashTags = '#PaRappatheRapper #PaRappa #パラッパラッパー';
@@ -67,4 +68,6 @@ const listener = app.listen(process.env.PORT, () => {
   const { port } = listener.address();
   // eslint-disable-next-line no-console
   console.log(`@CheapCheapChkn bot is running on port ${port}`);
+
+  tweetEndpoint(port);
 });
