@@ -20,6 +20,11 @@ Source adapted from [twitterbot](https://twitterbot.glitch.me/) on Glitch.
 
 1. `yarn lint`
 
+### Heroku deployment
+
+- Access devDeps (so it doesn't freak out about Babel): `heroku config:set YARN_PRODUCTION=false`
+- Deploy: `git push heroku master`
+
 ## Technologies
 
 - Deployed on [Heroku](https://www.heroku.com/)
