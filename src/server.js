@@ -9,8 +9,9 @@ import tweetEndpoint from './bot';
  *
  * - Fix "Error: { Error: Invalid or expired token."
  * - Host on free Heroku + wake it up once a day with New Relic addon
- * - Use Heroku Scheduler add-on to hit /BOT_ENDPOINT every 24 hours and make the bot tweet
+ * - Hit /BOT_ENDPOINT every 24 hours and make the bot tweet
  *     - https://blog.andyjiang.com/intermediate-cron-jobs-with-heroku
+ *     - https://quickleft.com/blog/6-easy-ways-to-prevent-your-heroku-node-app-from-sleeping/
  * - Unit tests (Jest)
  */
 
