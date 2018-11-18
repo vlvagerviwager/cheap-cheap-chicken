@@ -4,12 +4,6 @@ import fs from 'fs';
 import Twit from 'twit';
 import tweetEndpoint from './bot';
 
-/*
- * TODO:
- *
- * - Unit tests (Jest)
- */
-
 // Setup
 dotenv.config();
 const app = express();
