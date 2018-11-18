@@ -11,6 +11,7 @@ Source adapted from [twitterbot](https://twitterbot.glitch.me/) on Glitch.
 ### Run
 
 1. Populate `.env-template` file and rename to `.env`
+    - Don't show anyone or push to version control! It's a secret 🗝
 1. `npm install -g yarn`
 1. `yarn start`
     - This triggers [@CheapCheapChkn](https://twitter.com/CheapCheapChkn) to tweet a random quote from her rap
