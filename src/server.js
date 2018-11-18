@@ -69,5 +69,8 @@ const listener = app.listen(process.env.PORT, () => {
   // eslint-disable-next-line no-console
   console.log(`@CheapCheapChkn bot is running on port ${port}`);
 
-  tweetEndpoint(port);
+  // Once per day
+  setInterval(() => {
+    tweetEndpoint(port);
+  }, 86400000);
 });
