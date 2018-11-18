@@ -40,3 +40,4 @@ Source adapted from [twitterbot](https://twitterbot.glitch.me/) on Glitch.
 - [Babel](https://babeljs.io/)
 - [Yarn](https://yarnpkg.com/en/)
 - [ESLint](https://eslint.org/)
+- [Jest](https://jestjs.io/)
