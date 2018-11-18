@@ -22,9 +22,10 @@ Source adapted from [twitterbot](https://twitterbot.glitch.me/) on Glitch.
 
 ## Technologies
 
-- Node.js
-- Express
+- Deployed on [Heroku](https://www.heroku.com/)
+- [Node.js](https://nodejs.org/en/)
+- [Express](https://expressjs.com/)
 - [Twit](https://github.com/ttezel/twit)
-- Babel
-- Yarn
-- ESLint
+- [Babel](https://babeljs.io/)
+- [Yarn](https://yarnpkg.com/en/)
+- [ESLint](https://eslint.org/)
