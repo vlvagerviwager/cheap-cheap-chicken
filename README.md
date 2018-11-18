@@ -2,7 +2,7 @@
 
 Have you ever wanted to be yelled at by a chicken from the kitchen?
 
-A Twitter bot that tweets quotes from Cheap Cheap Chicken's rap, from the videogame PaRappa the Rapper.
+A Twitter bot that tweets quotes from Cheap Cheap Chicken's raps, from the video game PaRappa the Rapper.
 
 Source adapted from [twitterbot](https://twitterbot.glitch.me/) on Glitch.
 
