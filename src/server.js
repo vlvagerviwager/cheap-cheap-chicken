@@ -7,11 +7,6 @@ import tweetEndpoint from './bot';
 /*
  * TODO:
  *
- * - Fix "Error: { Error: Invalid or expired token."
- * - Host on free Heroku + wake it up once a day with New Relic addon
- * - Hit /BOT_ENDPOINT every 24 hours and make the bot tweet
- *     - https://blog.andyjiang.com/intermediate-cron-jobs-with-heroku
- *     - https://quickleft.com/blog/6-easy-ways-to-prevent-your-heroku-node-app-from-sleeping/
  * - Unit tests (Jest)
  */
 
@@ -32,7 +27,7 @@ let T;
 try {
   T = new Twit(config.twitter);
   // eslint-disable-next-line no-console
-  console.log(`Ready to tweet! Send a GET or POST request to localhost/${process.env.BOT_ENDPOINT}`);
+  console.log(`Ready to tweet! Send a GET or POST request to localhost:${process.env.PORT}/${process.env.BOT_ENDPOINT}`);
 } catch (err) {
   // eslint-disable-next-line no-console
   console.error(err, 'Sorry, the .env file does not have the correct settings in order to tweet.');
