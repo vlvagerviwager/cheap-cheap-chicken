@@ -6,6 +6,15 @@ A Twitter bot that tweets quotes from Cheap Cheap Chicken's raps, from the video
 
 Source adapted from [twitterbot](https://twitterbot.glitch.me/) on Glitch.
 
+## Status
+
+Working, but not automated yet.
+
+### TODO
+
+- Use New Relic add-on to wake up
+- Travis CI
+
 ## Usage
 
 ### Run
@@ -42,8 +51,3 @@ Source adapted from [twitterbot](https://twitterbot.glitch.me/) on Glitch.
 - [Yarn](https://yarnpkg.com/en/)
 - [ESLint](https://eslint.org/)
 - [Jest](https://jestjs.io/)
-
-## TODO
-
-- Use New Relic add-on to wake up
-- Travis CI
