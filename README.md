@@ -42,3 +42,7 @@ Source adapted from [twitterbot](https://twitterbot.glitch.me/) on Glitch.
 - [Yarn](https://yarnpkg.com/en/)
 - [ESLint](https://eslint.org/)
 - [Jest](https://jestjs.io/)
+
+## TODO
+
+- Travis CI
